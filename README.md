@@ -4,7 +4,7 @@
 Este projeto tem o objetivo de **poupar o trabalho manual de preencher planilhas de gastos financeiros pessoais**. Basicamente funciona consumindo dados do Open Finance de uma conta bancária de uma pessoa física (via API da Pluggy) e organizando os dados em uma planilha no Google Sheets.
 
 ## Como Funciona?
-Imagem
+![Funcionamento](explicacao_openfinance.jpg)
 
 ## ✨ Funcionalidades
 - **Sincronização de Tempo**: utiliza arquivos de log para identificar a data da última transação capturada, evitando registros duplicados
