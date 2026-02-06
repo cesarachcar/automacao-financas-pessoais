@@ -38,6 +38,7 @@ pip install requests gspread google-auth
 
 ## 📌 Notas
 - **Primeira Vez**: quando for usar o código pela primeira vez, configure as datas das transações em ```from_date``` e ```to_date``` (deixei comentado)
+- **Para rodar todo dia**: para que sua planilha esteja sempre atualizada sem que você precise rodar o script manualmente, recomendo configurar o Agendador de Tarefas do Windows com a opção habilitada "Executar a tarefa o mais rápido possível após uma inicialização agendada ter sido perdida". O código vai ver o último log, e buscar a partir da data dele.
 - **Fuso Horário**: o código realiza um ajuste de -3 horas para o horário de Brasília (as transações são registradas em GMT 0)
 - **Categorias**: você pode personalizar suas próprias categorias dentro da função ```put_label``` no arquivo ```main.py``` (ex: classificar como mercado reconhecendo o nome do mercado (que você sempre vai) na descrição das transações
 - **Funciona em 90% das transações**: muito provavelmente em virtude de políticas do Banco Central e dos próprios bancos, ou por ser relativamente uma tecnologia recente, algumas transações simplesmente não são registradas no Open Finance, eu diria que a cada 10 somente 1 não aparece. Mesmo assim vejo utilidade, visto que ao final do mês posso simplesmente bater olho no que está faltando e registrar, de qualquer forma, poupa bastante tempo.
